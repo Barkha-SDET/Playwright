@@ -1,0 +1,12 @@
+import {test, expect} from '@playwright/test';
+
+test("Launch Test" , async({browser})=>
+{
+
+    const context = await browser.newContext();
+    const page = await context.newPage();
+
+    await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/')
+
+})
+
